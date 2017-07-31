@@ -69,7 +69,7 @@ export default {
 <style scoped>
 header.navbar {
   height: 70px;
-  background: url(../../assets/img/logo.png) no-repeat;
+  background: url(~@/assets/img/logo.png) no-repeat;
   background-position: 10px;
   margin-bottom: 0px;
 }
