@@ -69,13 +69,18 @@ export default {
 <style scoped>
 header.navbar {
   height: 70px;
-  background: url(~@/assets//img/logo.png) no-repeat;
+  background: url(../../assets/img/logo.png) no-repeat;
   background-position: 10px;
+  margin-bottom: 0px;
+}
+
+.main {
+  height: calc(100% - 70px - 70px);
 }
 
 .login-wrap {
   width: 100%;
-  height: 450px;
+  height: 100%;
   background: linear-gradient(45deg, #020031 0, #6d3353 100%);
   position: relative;
   display: flex;
@@ -118,6 +123,7 @@ header.navbar {
 }
 
 .footer {
+  height: 70px;
   padding: 40px 10px;
 }
 </style>
