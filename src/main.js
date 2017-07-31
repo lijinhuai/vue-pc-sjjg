@@ -6,7 +6,7 @@ import router from './router'
 
 
 //导入第三方UI组件
-import './ui'
+import './UI'
 
 Vue.config.productionTip = false
 

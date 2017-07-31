@@ -67,7 +67,6 @@ export default {
 </script>
 
 <style scoped>
-
 header.navbar {
   height: 70px;
   background: url(~@/assets//img/logo.png) no-repeat;
@@ -82,7 +81,7 @@ header.navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-   justify-content: center; 
+  justify-content: center;
 }
 
 .login-wrap:after {
@@ -100,13 +99,13 @@ header.navbar {
 .ms-title {
   height: 80px;
   font-size: 40px;
-  color: black;
+  color: #fff;
 }
 
 .ms-login {
-   z-index: 1; 
-   padding: 10px;
-   width: 300px;
+  z-index: 1;
+  padding: 10px;
+  width: 300px;
 }
 
 .login-btn {
@@ -118,11 +117,9 @@ header.navbar {
   height: 36px;
 }
 
-.footer{
+.footer {
   padding: 40px 10px;
 }
-
-
 </style>
 
 
