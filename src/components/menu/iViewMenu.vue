@@ -50,14 +50,14 @@
 export default {
   props: ['mode', 'menuItems'],
   methods: {
-    onSelect(name) {
-      const self = this;
-      self.$router.push(name);
+    onSelect (name) {
+      const self = this
+      self.$router.push(name)
     }
   },
   computed: {
-    onRoutes() {
-      return this.$route.path.replace('/', '');
+    onRoutes () {
+      return this.$route.path.replace('/', '')
     }
   }
 }

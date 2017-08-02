@@ -3,9 +3,9 @@
  * 按需导入
  */
 
-//导入Bootstrap
-import Bootstrap from './Bootstrap'
-//导入ElementUI
-import ElementUI from './ElementUI'
-//导入iView
-import iView from './iView'
+// 导入Bootstrap
+import './Bootstrap'
+// 导入ElementUI
+import './ElementUI'
+// 导入iView
+import './iView'

@@ -4,16 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-
-//导入第三方UI组件
+// 导入第三方UI组件
 import './UI'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    router,
-    template: '<App/>',
-    components: { App }
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: {
+    App
+  }
 })

@@ -5,9 +5,9 @@
 </template>
 <script>
 import vMenu from './menu/iViewMenu.vue'
-import menuItems from '@/config/menu.json';
+import menuItems from '@/config/menu.json'
 export default {
-  data() {
+  data () {
     return {
       menuItems: menuItems,
       mode: 'horizontal'
@@ -19,6 +19,4 @@ export default {
 }
 </script>
 <style scoped>
-.header {
-}
 </style>

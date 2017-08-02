@@ -21,8 +21,8 @@
 export default {
   props: ['mode', 'menuItems'],
   computed: {
-    onRoutes() {
-      return this.$route.path.replace('/', '');
+    onRoutes () {
+      return this.$route.path.replace('/', '')
     }
   }
 }

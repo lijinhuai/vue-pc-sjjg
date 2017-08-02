@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       loginTitle: '苏州市公安局交警警务平台',
       copyRight: '<a href="http://10.35.243.54:88/sjjg">苏州市公安局交警警务平台</a> © 2016 苏州市公安局交通警察支队. 技术支持 <a href="http://www.cybertech.com.cn">苏州广达</a>',
@@ -50,17 +50,17 @@ export default {
     }
   },
   methods: {
-    submitForm(formName) {
-      const self = this;
+    submitForm (formName) {
+      const self = this
       self.$refs[formName].validate((valid) => {
         if (valid) {
-          localStorage.setItem('ms_username', self.ruleForm.username);
-          self.$router.push('/home');
+          localStorage.setItem('ms_username', self.ruleForm.username)
+          self.$router.push('/home')
         } else {
-          console.log('error submit!!');
-          return false;
+          // console.log('error submit!!')
+          return false
         }
-      });
+      })
     }
   }
 }
