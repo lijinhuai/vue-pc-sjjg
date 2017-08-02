@@ -9,5 +9,3 @@ import Bootstrap from './Bootstrap'
 import ElementUI from './ElementUI'
 //导入iView
 import iView from './iView'
-
-export default {}
