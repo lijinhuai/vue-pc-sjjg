@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <v-head></v-head>
-     <v-sidebar></v-sidebar> 
+     <!-- <v-sidebar></v-sidebar>  -->
     <div class="content">
       <transition name="move" mode="out-in">
         <router-view></router-view>
@@ -23,7 +23,7 @@ export default {
 .content {
   background: none repeat scroll 0 0 #fff;
   position: absolute;
-  left: 250px;
+  left: 0;
   right: 0;
   top: 60px;
   bottom: 0;
