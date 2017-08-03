@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <v-menu mode="horizontal" :menuItems="menuItems"></v-menu>
+    <v-menu :mode="mode" :menuItems="menuItems"></v-menu>
   </div>
 </template>
 <script>
