@@ -7,24 +7,32 @@
     </div>
   </div>
 </template>
-<script src="static/shape-shifter/shape-shifter.js">
-</script>
-
 <script>
-import S from 'static/shape-shifter/shape-shifter.js'
+import Canvas from 'assets/plugins/shape-shifter/shape-shifter.js'
 export default {
-  mounted (){
-    S.init();
+  mounted () {
+    const self = this
+    self.drawCanvas(function () {
+      self.$router.push({ path: '/home' })
+    })
   },
-  methods:{
-    // init (){
-    //   S.init();
-    // }
+  methods: {
+    drawCanvas (callback) {
+      Canvas.init(callback)
+    }
   }
 
 }
 </script>
-<style src="static/shape-shifter/site.min.css"></style>
+<style src="assets/plugins/shape-shifter/site.css"></style>
+
+<style scoped>
+.body--ready {
+  margin: -10px;
+}
+</style>
+
+
 
 
 

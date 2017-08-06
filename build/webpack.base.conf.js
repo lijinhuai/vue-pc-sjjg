@@ -24,6 +24,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'static': resolve('static'),
+      'assets': resolve('src/assets'),
       'pages': resolve('src/pages'),
       'components': resolve('src/components')
     }
@@ -36,7 +37,7 @@ module.exports = {
     })
   ],
   module: {
-    rules: [/* {
+    rules: [{
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
@@ -44,7 +45,7 @@ module.exports = {
         options: {
           formatter: require('eslint-friendly-formatter')
         }
-      }, */
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',

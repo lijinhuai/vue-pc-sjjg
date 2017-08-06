@@ -1,0 +1,69 @@
+/*! shape-shifter 2013-08-14 */
+
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+.body--ready {
+  background: -webkit-linear-gradient(top, #cbebdb 0, #3794c0 120%);
+  background: -moz-linear-gradient(top, #cbebdb 0, #3794c0 120%);
+  background: -o-linear-gradient(top, #cbebdb 0, #3794c0 120%);
+  background: -ms-linear-gradient(top, #cbebdb 0, #3794c0 120%);
+  background: linear-gradient(top, #cbebdb 0, #3794c0 120%)
+}
+
+.body--ready .ui {
+  display: block
+}
+
+.ui {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  width: 300px;
+  margin-left: -150px
+}
+
+.ui-input {
+  width: 100%;
+  height: 50px;
+  background: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  border-bottom: 2px solid #fff
+}
+
+.ui-input:focus {
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #fff
+}
+
+.ui-return {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 3px 2px 0;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.ui--enter .ui-return {
+  display: block
+}
+
+.ui--wide {
+  width: 76%;
+  margin-left: 12%;
+  left: 0
+}
+
+.ui--wide .ui-return {
+  right: -20px
+}
