@@ -1,12 +1,12 @@
-import Login from 'pages/Login'
-import Home from 'components/Home'
+const Login = resolve => require(['pages/Login'], resolve)
+const Home = resolve => require(['components/Home'], resolve)
 
 // import Welcome from 'pages/Welcome'
-import Zhjg from 'pages/zhjg/index'
-import Yryd from 'pages/yryd/index'
-import Wjw from 'pages/wjw/index'
-import Fxyp from 'pages/fxyp/index'
-import Znyj from 'pages/znyj/index'
+const Zhjg = resolve => require(['pages/zhjg/index'], resolve)
+const Yryd = resolve => require(['pages/yryd/index'], resolve)
+const Wjw = resolve => require(['pages/wjw/index'], resolve)
+const Fxyp = resolve => require(['pages/fxyp/index'], resolve)
+const Znyj = resolve => require(['pages/znyj/index'], resolve)
 
 const routes = [{
   path: '/',
