@@ -93,8 +93,8 @@ export default {
   }
 }
 </script>
-
 <style scoped>
+@import '~animate.css/animate.min.css';
 header.navbar {
   height: 70px;
   background: url(~@/assets/img/logo.png) no-repeat;
