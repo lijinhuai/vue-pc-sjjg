@@ -11,7 +11,7 @@ export default {
    * mock bootstrap
    */
   bootstrap () {
-    let mock = new MockAdapter(axios)
+    const mock = new MockAdapter(axios)
 
     // mock success request
     mock.onGet('/success').reply(200, {
@@ -25,14 +25,14 @@ export default {
 
     // 登录
     mock.onPost('/login').reply(config => {
-      let {
+      const {
         username,
         password
       } = JSON.parse(config.data)
       return new Promise((resolve, reject) => {
         let user = null
         setTimeout(() => {
-          let hasUser = LoginUsers.some(u => {
+          const hasUser = LoginUsers.some(u => {
             if (u.username === username && u.password === password) {
               user = JSON.parse(JSON.stringify(u))
               user.password = undefined
@@ -58,10 +58,10 @@ export default {
 
     // 获取用户列表
     mock.onGet('/user/list').reply(config => {
-      let {
+      const {
         name
       } = config.params
-      let mockUsers = _Users.filter(user => {
+      const mockUsers = _Users.filter(user => {
         if (name && user.name.indexOf(name) === -1) return false
         return true
       })
@@ -76,7 +76,7 @@ export default {
 
     // 获取用户列表（分页）
     mock.onGet('/user/listpage').reply(config => {
-      let {
+      const {
         page,
         name
       } = config.params
@@ -84,7 +84,7 @@ export default {
         if (name && user.name.indexOf(name) === -1) return false
         return true
       })
-      let total = mockUsers.length
+      const total = mockUsers.length
       mockUsers = mockUsers.filter((u, index) => index < 20 * page && index >= 20 * (page - 1))
       return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -98,7 +98,7 @@ export default {
 
     // 删除用户
     mock.onGet('/user/remove').reply(config => {
-      let {
+      const {
         id
       } = config.params
       _Users = _Users.filter(u => u.id !== id)
@@ -131,7 +131,7 @@ export default {
 
     // 编辑用户
     mock.onGet('/user/edit').reply(config => {
-      let {
+      const {
         id,
         name,
         addr,
@@ -161,7 +161,7 @@ export default {
 
     // 新增用户
     mock.onGet('/user/add').reply(config => {
-      let {
+      const {
         name,
         addr,
         age,
